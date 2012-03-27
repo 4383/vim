@@ -1,0 +1,75 @@
+#---------------------------------------------
+# Configuration de mes alias permanent
+#---------------------------------------------
+
+#-------------------------courant
+alias ll="ls -la"
+alias li="li -i"
+alias cls="clear"
+alias load=". ~/.bashrc"
+alias mkdirp="mkdir -p"
+alias lns="ln -s"
+
+#-------------------------aller au repertoire
+alias cdw="cd /var/www"
+alias cdwvsadev="cd /var/www/siteavs/dev"
+alias cdwvsapre="cd /var/www/siteavs/preprod"
+alias cda="cd /etc/apache2"
+alias cdwpv="cd /var/www/plusvalue"
+alias cdOlivier="cd /mnt/OlivierPartage"
+
+#-------------------------analyse reseau
+alias pingbroadcast="ping -b 192.168.0.255"
+alias nmap="nmap -PN -sC -A -T4 "
+
+#-------------------------edition
+alias vimalias="vim ~/.bash_aliases"
+alias vimbash="vim ~/.bashrc"
+alias vimvim="vim ~/.vimrc"
+alias vimh="sudo vim /etc/hosts"
+alias vimv="sudo vim /etc/apache2/sites-available/default"
+alias vimp="sudo vim /etc/php5/apache2/php.ini"
+
+#-------------------------recherche
+alias findPhp="find . | grep php$ | xargs grep "
+
+#-------------------------connection ssh
+alias sshbremi="ssh bazaar@83.145.112.88"
+alias sshrremi="ssh root@83.145.112.88"
+alias sshrbat="ssh root@192.168.1.26"
+alias sshRv="ssh rv@82.247.247.196"
+alias sshz="ssh herve@192.168.0.70"
+
+#-------------------------monter des partitions
+alias mntO="sudo mount -t cifs //192.168.0.14/Partage /mnt/OlivierPartage -o auto,username=Olivier,password=13olivier13"
+
+#-------------------------supprimer
+alias ri="rm -i"
+alias rm="rm -r"
+
+#-------------------------Uploader rsync
+alias upPreProd="rsync -arv --delete --backup --backup-dir=/home/bazaar/backup/preprod/ /var/www/siteavs/preprod/ root@83.145.112.88:/www/htdocs/bazaar/preprod/"
+
+#-------------------------Compresser / Decompresser
+alias tarc="tar cfvz"
+alias tard="tar xfvz"
+
+#-------------------------Synthèse vocale
+alias parler="espeak -v fr "
+
+#-------------------------VSA
+alias tailvsaerr="tail -f /var/log/httpd/dev.avs.error.log"
+alias tailvsaacc="tail -f /var/log/httpd/dev.avs.access.log"
+alias vsaPurgerSmarty="rm -rf /var/www/siteavs/dev/libs/smarty/compile/*"
+
+#-------------------------Info Schengen assurance (plus value)
+alias tailpverr="tail -f /var/log/httpd/dev.plusvalue.error.log"
+alias tailpvacc="tail -f /var/log/httpd/dev.plusvalue.access.log"
+
+#-------------------------Créer une sitemap d'un site
+alias sitemapVSA="wget -r 'http://visa-schengen-assurance.com' -o preSiteMap"
+
+#-------------------------Apache
+alias apr="sudo /etc/init.d/apache2 restart"
+alias gdmr="sudo /etc/init.d/gdm restart"
+alias netr="sudo /etc/init.d/networking restart" 

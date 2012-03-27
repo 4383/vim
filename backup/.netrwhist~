@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/var/www/dites_leur/preprod/www/sites/all'
+let g:netrw_dirhist_2='/var/www/dites_leur/preprod/www/sites/all/themes'
+let g:netrw_dirhist_3='/var/www/dites_leur/preprod/www/sites/all/themes/Plus_value'
+let g:netrw_dirhist_4='/var/www/dites_leur/preprod/www'
+let g:netrw_dirhist_5='/var/www/dites_leur/preprod/www/sites/all/modules/extjstab/animation_mail'
+let g:netrw_dirhist_6='/var/www/siteavs/dev/website/js'
+let g:netrw_dirhist_7='/var/www/dites_leur/preprod/www/sites/all/themes/Plus_value'
+let g:netrw_dirhist_8='/var/www/dites_leur/preprod/www/themes/garland'
+let g:netrw_dirhist_9='/var/www/dites_leur/preprod/www/sites/all/modules/flowplayer'
